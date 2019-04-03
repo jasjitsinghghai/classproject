@@ -27,6 +27,6 @@ insert into enrollments values("106","1158");
 insert into enrollments values("107","1451");
 insert into enrollments values("108","1673");
 Select * from enrollment 
-studentname,students.studentid,classes.classname,clases.datetime,classes.classid
+Select students.studentname,students.studentid,classes.classname,classes.datatime,classes.classid
 from students,classes,enrollments
-where students.studentid=enrollments.studentid and classes.classid=enrollments.classid
+where students.studentid=enrollments.stidentid and classes.classid=enrollments.classid
